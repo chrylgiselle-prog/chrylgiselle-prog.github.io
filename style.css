@@ -1,0 +1,129 @@
+/* slide: s2-first-rules · indicator 1 · end state */
+/* Little Lemon — style.css
+   Built in class order. Each block is added on one deck section. */
+
+/* ===== 1. A first rule: element selectors (§2) ===== */
+
+/* --- VIBES LUCU EARTHTONE --- */
+
+/* 1. Pengaturan Dasar & Background (Warna Krem Oat) */
+body {
+  font-family: 'Quicksand', 'Trebuchet MS', sans-serif; 
+  background-color: #F9F3EE; /* Warna oat/krem lembut */
+  color: #5D4037; /* Cokelat tua untuk teks agar tidak kaku seperti hitam */
+  margin: 0;
+  padding: 20px;
+  text-align: center; /* Membuat semua teks ke tengah (lebih imut) */
+}
+
+/* 2. Warna Judul (Terracotta/Bata Halus) */
+h1, h2 {
+  color: #CB7A5D; 
+}
+
+/* 3. Navigasi ala Tombol Lucu (Hijau Sage) */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: #A3B18A; /* Hijau Sage */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px; /* Membuat bentuknya oval seperti pil */
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #7D8E63; /* Hijau lebih gelap saat disentuh mouse */
+}
+
+/* 4. Kartu Menu (Bentuk Kotak Membulat dengan Bayangan) */
+.menu-card {
+  background-color: #FFFFFF;
+  border-radius: 20px; /* Sudut membulat */
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 300px; /* Agar kotaknya tidak terlalu lebar */
+  box-shadow: 0 8px 16px rgba(93, 64, 55, 0.08); /* Bayangan cokelat transparan */
+}
+
+.menu-card img {
+  border-radius: 12px; /* Sudut foto membulat */
+  width: 100%;
+  height: auto;
+}
+
+.price {
+  font-weight: bold;
+  color: #A3B18A;
+  font-size: 1.2em;
+}
+
+/* 5. Tabel Estetik */
+table {
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  border-collapse: collapse;
+  border-radius: 15px;
+  overflow: hidden; /* Agar border-radius di tabel berfungsi */
+  box-shadow: 0 4px 10px rgba(93, 64, 55, 0.05);
+  width: 80%;
+  max-width: 400px;
+}
+
+th, td {
+  padding: 15px;
+  border-bottom: 1px solid #F9F3EE;
+}
+
+th {
+  background-color: #E6CCB2; /* Cokelat muda karamel untuk kepala tabel */
+  color: #5D4037;
+}
+
+/* --- TAMBAHAN HEADER "NGAYU" GEMES --- */
+
+/* Membuat background seperti papan nama toko */
+header {
+  background-color: #E8D8C4; /* Warna dasar kayu/krem hangat */
+  padding: 20px 40px;
+  border-radius: 30px;
+  border: 4px dashed #C08261; /* Border putus-putus ala jahitan/rustic */
+  display: inline-block; 
+  margin-top: 20px;
+  margin-bottom: 10px;
+  box-shadow: 6px 6px 0px #9BA4B5; /* Bayangan tebal ala retro/stiker */
+}
+
+/* Menghilangkan margin bawaan */
+header p {
+  margin: 5px 0;
+}
+
+/* Mengubah tulisan "Little Lemon" jadi besar, cokelat kayu, dan efek 3D */
+header a {
+  font-size: 3em; /* Ukuran super besar */
+  font-weight: 900;
+  color: #614124; /* Warna cokelat kayu tua pekat */
+  text-decoration: none; /* Hilangkan garis bawah biru */
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0px #FFFFFF, 4px 4px 0px #E1C7A5; /* Efek tulisan timbul 3D */
+}
+
+header a:hover {
+  color: #C08261; /* Berubah warna terracotta saat disentuh */
+}
+
+/* Gaya untuk teks "Middle Eastern food..." */
+header p:last-child {
+  font-size: 1.1em;
+  color: #6C5F5B;
+  font-style: italic;
+  font-weight: 600;
+}
